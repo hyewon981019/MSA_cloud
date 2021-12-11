@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:enabled {
+            background : yellow;
+        }
+
+        input:disabled {
+            border : red 3px solid;
+        }
+
+        input:focus {
+            border : blue 3px solid;
+        }
+
+        input[type = checkbox] + label {
+            color : black;
+        }
+
+    
+        input[type = checkbox]:checked + label {
+            color : red;
+        }
+
+        input[type = checkbox]:checked {
+            box-shadow : 0 0 0 3px red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="사용 가능한 상태">
+    <input type="text" value="사용 가능하지 않은 상태" disabled>
+    <input type="text" value="">
+    <br>
+    <input type="checkbox" name="chk" id="a"> <label for="a">사과</label>
+    <input type="checkbox" name="chk" id="b"> <label for="b">바나나</label>
+    <input type="checkbox" name="chk" id="c"> <label for="c">오렌지</label>
+    <input type="checkbox" name="chk" id="d"> <label for="d">자몽</label>
+    <br>
+    <input type="checkbox" name="color"> 빨강
+    <input type="checkbox" name="color"> 노랑
+    <input type="checkbox" name="color"> 주황
+    <input type="checkbox" name="color"> 파랑
+
+</body>
+</html>
