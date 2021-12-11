@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin : 0;
+            padding: 0;
+        }
+
+        div[class^="box"]
+        {
+            box-sizing: border-box;
+        }
+
+        .box1, .box2, .box3, .box4 {
+            height: 100px;
+            border : 3px solid blue;
+            background-color: aliceblue;
+        }
+
+        .boxA {
+            border : 3px solid red;
+        }
+
+        .box2, .box3 {
+            width: 50%;
+            float : left;
+        }
+
+        .boxA:after {
+            content: "";
+            display: block;
+            clear : both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">BOX1</div>
+    <div class="boxA">
+        <div class="box2">BOX2</div>
+        <div class="box3">BOX3</div>
+    </div>
+    <div class="box4">BOX4</div>
+</body>
+</html>

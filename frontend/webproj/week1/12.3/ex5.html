@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+    content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no, initial-scale=1">
+    <title>Document</title>
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+        }
+
+        div[class^="box"]
+        {
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .boxA {
+            border : solid 8px red;
+            background-color: green;
+            color : white;
+            position: relative;
+        }
+
+        .boxA .box1{
+            border: solid 8px red;
+            background-color: #ffffee;
+            color : #d0d03d;
+            line-height: 200px;
+        }
+
+        .boxA .box2{
+            border: solid 8px black;
+            background-color: #ffc2c9;
+            color : #eb6877;
+            line-height: 100px;
+        }
+
+        .box2 {
+            position : absolute;
+            top : 30px;
+            left : 0;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="boxA">
+        <div class="box1">BOX1</div>
+        <div class="box2">BOX2</div>
+    </div>
+    
+</body>
+</html>

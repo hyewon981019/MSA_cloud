@@ -1,0 +1,81 @@
+@media all and (min-width: 768px) {
+    .box3 { float: left; width: 70%; }
+    .box4 { float: left; width: 30%; }
+    .boxA:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+.site h1 a {
+    color: #000;
+    text-decoration: none;
+}
+.site h1 {
+    margin: 0;
+    font-size: 30px;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li {
+    float: left;
+    width: auto;
+}
+.menu ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.menu li a {
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+.menu li a:hover {
+    background-color: #75dbe7;
+}
+.story h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.story p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}.sidemenu h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 18px;
+    border-bottom: 2px dotted #ddd;
+}
+.sidemenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidemenu li a {
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+.sidemenu li a:hover {
+    background-color: #eee;
+}
+.copyright p {
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+}
+.story img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
