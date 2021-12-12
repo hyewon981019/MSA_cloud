@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() 
+        {
+            let output = '';
+            for(let i = 0; i<256;i++)
+            {
+                output += '<div></div>';
+            }
+
+            document.body.innerHTML = output;
+
+            const divs = document.querySelectorAll('div');
+            divs.forEach((div, index) => {
+                div.style.height = '2px';
+
+                div.style.backgroundColor = `rgb(${255-index}, ${255-index}, ${255-index})`;
+            });
+
+
+         };
+    </script>
+</head>
+<body>
+    <!-- <h1>H1 header 1</h1>
+    <h1>H1 header 2</h1>
+    <h1>H1 header 3</h1>
+
+    <h2>H2 header 1</h2>
+    <h2>H2 header 2</h2>
+    <h2>H2 header 3</h2> -->
+</body>
+</html>

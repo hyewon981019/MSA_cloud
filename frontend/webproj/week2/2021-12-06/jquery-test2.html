@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            //$('p').removeClass('big');
+            $('span').addClass('big');
+            $('p').click(function () {
+                $(this).toggleClass('italic'); //클릭한 p태그
+            });
+
+            $('#box').css({
+                width : 100,
+                height : 100,
+                background : 'orange'
+            }).on('click', function() {
+                console.log("박스가 클릭됨");
+            }).on('mouseenter', function(){
+                $(this).css('backgroundColor', 'red');
+            }).on('mouseleave', function(){
+                $(this).css('backgroundColor', 'orange');
+            });
+        });
+    </script>
+    <style>
+        .big {
+            font-size : 2rem;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic{
+            font-style : italic;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="big bold italic">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+    <span>bbbbbbbbbbbbbbbbbbbb</span>
+    <p class="big bold italic">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+    <div id="box"></div>
+</body>
+</html>

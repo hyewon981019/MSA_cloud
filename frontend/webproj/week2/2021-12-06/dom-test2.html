@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function buttonClick()
+        {
+            alert("버튼을 눌렀습니다");
+        }
+
+        window.onload = function()
+        {
+            document.getElementById("button").onclick = function(e)
+            { 
+                /*버튼이라는 아이디를 가진 앨리먼트를 클릭하면 아래 이벤트 실행*/
+                console.log(e);
+                console.log(e.target.innerHTML);
+                alert(e.target.innerHTML + "클릭");
+
+            }
+
+            document.querySelector('a').onclick = function(e)
+            {
+                console.log("링크 클릭");
+                e.preventDefault();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- 인라인 이벤트 모델 -->
+    <button onclick = "javascript : alert('클릭되었음')">버튼</button>
+    <button onclick = "buttonClick()">버튼</button>
+
+    <!-- 고전 이벤트 모델 -->
+    <button id = "button">마이버튼</button>
+
+    <!-- 링크를 클릭했을 대 href로 이동하는 기본 이벤트가 정의되어 있음 -->
+    <a href="http://hanbit.co.kr">한빛출판사로 이동</a>
+</body>
+</html>
